@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer: React.FC = () => {
@@ -61,8 +62,8 @@ const Footer: React.FC = () => {
             <p>&copy; 2025 Nexent Cloud. All rights reserved.</p>
           </div>
           <div className="footer-legal">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/terms-of-use">Terms of Use</Link>
             <a href="#cookies">Cookie Policy</a>
           </div>
         </div>

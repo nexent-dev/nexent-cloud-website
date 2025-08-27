@@ -33,6 +33,7 @@ const Navbar: React.FC = () => {
           <button onClick={() => scrollToSection('home')} className="navbar-link">Home</button>
           <button onClick={() => scrollToSection('services')} className="navbar-link">Features</button>
           <Link to="/marketplace" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Marketplace</Link>
+          <Link to="/docs" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Docs</Link>
           <button onClick={() => scrollToSection('roadmap')} className="navbar-link">Roadmap</button>
           <Link to="/pricing" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Pricing</Link>
           <Link to="/contact" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
