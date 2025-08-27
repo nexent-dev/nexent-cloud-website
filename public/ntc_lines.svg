@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="993.804" height="892" viewBox="0 0 993.804 892">
+  <g id="ntc_lines" transform="translate(-460.098 -104.5)">
+    <g id="group">
+      <g id="Nexent_Logo" transform="translate(724.098 430.743)">
+        <path id="Path_154" data-name="Path 154" d="M392.181,384.549a86.054,86.054,0,0,0-121.689,0L113.37,541.672h0a86.055,86.055,0,0,0,121.694,0L392.181,384.555Z" transform="translate(-113.37 -347.365)" fill="#232222"/>
+        <path id="Path_155" data-name="Path 155" d="M608.6,362.417,451.48,519.539h0a86.054,86.054,0,0,0,121.688,0L730.291,362.417A86.055,86.055,0,0,0,608.6,362.417Z" transform="translate(-268.487 -337.21)" fill="#232222"/>
+      </g>
+      <g id="Nexent_Logo-2" data-name="Nexent_Logo" transform="translate(724.098 424.743)">
+        <path id="Path_154-2" data-name="Path 154" d="M392.181,384.549a86.054,86.054,0,0,0-121.689,0L113.37,541.672h0a86.055,86.055,0,0,0,121.694,0L392.181,384.555Z" transform="translate(-113.37 -347.365)" fill="none" stroke="#707070" stroke-width="0.5" stroke-dasharray="20"/>
+        <path id="Path_155-2" data-name="Path 155" d="M608.6,362.417,451.48,519.539h0a86.054,86.054,0,0,0,121.688,0L730.291,362.417A86.055,86.055,0,0,0,608.6,362.417Z" transform="translate(-268.487 -337.21)" fill="none" stroke="#707070" stroke-width="0.5" stroke-dasharray="20"/>
+      </g>
+      <g id="Nexent_Logo-3" data-name="Nexent_Logo" transform="translate(734.098 435.743)">
+        <path id="Path_154-3" data-name="Path 154" d="M392.181,384.549a86.054,86.054,0,0,0-121.689,0L113.37,541.672h0a86.055,86.055,0,0,0,121.694,0L392.181,384.555Z" transform="translate(-113.37 -347.365)" fill="#2a2a2a"/>
+        <path id="Path_155-3" data-name="Path 155" d="M608.6,362.417,451.48,519.539h0a86.054,86.054,0,0,0,121.688,0L730.291,362.417A86.055,86.055,0,0,0,608.6,362.417Z" transform="translate(-268.487 -337.21)" fill="#2a2a2a"/>
+      </g>
+    </g>
+    <line id="Line_28" data-name="Line 28" y2="239" transform="translate(1118.5 113.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_33" data-name="Line 33" y2="239" transform="translate(1114.5 104.5)" fill="none" stroke="#232222" stroke-width="1"/>
+    <line id="Line_29" data-name="Line 29" y2="239" transform="translate(854.5 757.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_35" data-name="Line 35" y2="239" transform="translate(848.5 750.5)" fill="none" stroke="#232222" stroke-width="1"/>
+    <line id="Line_30" data-name="Line 30" x2="258" transform="translate(1195.902 609.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_34" data-name="Line 34" x2="258" transform="translate(1188.902 604.5)" fill="none" stroke="#232222" stroke-width="1"/>
+    <line id="Line_31" data-name="Line 31" x2="258" transform="translate(466.098 465.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_32" data-name="Line 32" x2="258" transform="translate(460.098 463.5)" fill="none" stroke="#232222" stroke-width="1"/>
+  </g>
+</svg>
