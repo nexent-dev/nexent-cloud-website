@@ -1,22 +1,30 @@
-import React from 'react'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import AppMarketplace from './components/AppMarketplace'
-import Roadmap from './components/Roadmap'
-import CTA from './components/CTA'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+import Home from './pages/Home'
+import Marketplace from './pages/Marketplace'
+import Pricing from './pages/Pricing'
+import Contact from './pages/Contact'
+import Login from './pages/Login'
 import './App.css'
 
 function App() {
   return (
-    <div className="app">
-      <Hero />
-      <Features />
-      <AppMarketplace />
-      <Roadmap />
-      <CTA />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/marketplace" element={<Marketplace />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

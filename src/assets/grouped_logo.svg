@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="322.534" height="74" viewBox="0 0 322.534 74">
+  <g id="grouped_logo" transform="translate(-799.233 -503)">
+    <g id="Nexent_Logo" transform="translate(799.233 516.995)">
+      <path id="Path_154" data-name="Path 154" d="M187.671,366.065a22.933,22.933,0,0,0-32.429,0L113.37,407.938h0a22.933,22.933,0,0,0,32.431,0l41.871-41.871Z" transform="translate(-113.37 -356.152)" fill="#fff"/>
+      <path id="Path_155" data-name="Path 155" d="M493.351,343.931,451.48,385.8h0a22.933,22.933,0,0,0,32.429,0l41.872-41.872A22.933,22.933,0,0,0,493.351,343.931Z" transform="translate(-402.714 -337.21)" fill="#fff"/>
+    </g>
+    <text id="NEXENT" transform="translate(1029.767 554)" fill="#fff" font-size="47" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-91.303" y="0">NE</tspan><tspan y="0" font-family="SegoeUI-BoldItalic, Segoe UI" font-style="italic">X</tspan><tspan y="0">ENT</tspan></text>
+    <text id="FUTURE_AWAITS" data-name="FUTURE AWAITS" transform="translate(1029.767 575)" fill="#fff" font-size="8" font-family="SegoeUI, Segoe UI" letter-spacing="1.187em"><tspan x="-85.706" y="0">FUTURE AWAITS</tspan></text>
+  </g>
+</svg>

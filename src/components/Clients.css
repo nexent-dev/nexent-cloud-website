@@ -1,0 +1,137 @@
+.clients {
+  padding: 60px 0;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clients-header h2 {
+  margin-bottom: 0;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+}
+
+.clients-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients-scroll-container::before,
+.clients-scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-primary), transparent);
+}
+
+.clients-scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-primary), transparent);
+}
+
+.clients-scroll {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.clients-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 60px;
+  padding: 16px 24px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.client-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.client-logo {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.client-item:hover .client-logo {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.client-name {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .clients {
+    padding: 40px 0;
+  }
+  
+  .clients-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .client-item {
+    margin-right: 40px;
+    padding: 12px 20px;
+    min-width: 180px;
+  }
+  
+  .client-logo {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+  
+  .client-name {
+    font-size: 0.9rem;
+  }
+}

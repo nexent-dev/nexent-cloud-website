@@ -1,0 +1,231 @@
+.app-marketplace {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.marketplace-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.marketplace-header h2 {
+  margin-bottom: 20px;
+}
+
+.marketplace-header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-marketplace .apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.app-marketplace .app-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-marketplace .app-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.app-marketplace .app-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.app-marketplace .app-card:hover::before {
+  opacity: 1;
+}
+
+.app-marketplace .app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.app-marketplace .app-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.app-marketplace .app-info {
+  flex: 1;
+}
+
+.app-marketplace .app-name {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.app-marketplace .app-category {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.app-marketplace .app-description {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.app-marketplace .app-specs {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.app-marketplace .specs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.app-marketplace .specs-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.app-marketplace .spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.app-marketplace .spec-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.app-marketplace .spec-icon {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.app-marketplace .spec-details {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.8rem;
+}
+
+.app-marketplace .spec-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.app-marketplace .spec-label {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.app-marketplace .app-pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.app-marketplace .price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.app-marketplace .period {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.app-marketplace .app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.app-marketplace .install-time {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.app-marketplace .app-install-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.marketplace-cta {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+
+.marketplace-cta p {
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .app-marketplace .apps-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .app-marketplace .app-card {
+    padding: 20px;
+  }
+  
+  .marketplace-header {
+    margin-bottom: 60px;
+  }
+  
+  .app-marketplace .app-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .app-marketplace .app-install-btn {
+    width: 100%;
+  }
+}
