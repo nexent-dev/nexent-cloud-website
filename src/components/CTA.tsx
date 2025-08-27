@@ -12,7 +12,7 @@ const CTA: React.FC = () => {
             scalable, and zero-downtime application hosting.
           </p>
           <div className="cta-buttons">
-            <a href="https://cloud.nexent.dev/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-btn-primary">
+            <a href="https://console.cloud.nexent.dev/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-btn-primary">
               Launch App
             </a>
             <a href="#contact" className="btn btn-secondary cta-btn-secondary">

@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="hero">
       <div className="hero-background">
         <svg className="polygon-geometry" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
-          <defs>
+          {/* <defs>
             <linearGradient id="polygonGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="rgba(255,255,255,0.05)" />
               <stop offset="100%" stopColor="rgba(255,255,255,0.01)" />
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
               <stop offset="80%" stopColor="rgba(255,255,255,1)" />
               <stop offset="100%" stopColor="rgba(255,255,255,0)" />
             </linearGradient>
-          </defs>
+          </defs> */}
           
           {/* Electron border path */}
           <rect x="10" y="10" width="1180" height="780" fill="none" stroke="url(#electronGradient)" strokeWidth="3" strokeDasharray="30,15" className="electron-border" />
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="hero-buttons">
-            <a href="https://cloud.nexent.dev/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href="https://console.cloud.nexent.dev/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               <span>Get Started</span>
               <span className="btn-icon">→</span>
             </a>
