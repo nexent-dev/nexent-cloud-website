@@ -1,6 +1,41 @@
-# React + TypeScript + Vite
+# Nexent Cloud Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + TypeScript + Vite website for Nexent Cloud's enterprise cloud infrastructure platform.
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+   Edit `.env` and add your Google Analytics Measurement ID.
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Google Analytics Setup
+
+This project includes Google Analytics 4 integration using `react-ga4`. To enable analytics:
+
+1. Create a Google Analytics 4 property at [analytics.google.com](https://analytics.google.com)
+2. Copy your Measurement ID (format: G-XXXXXXXXXX)
+3. Add it to your `.env` file:
+   ```
+   VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+   ```
+
+The analytics will automatically track:
+- Page views on route changes
+- Custom events (can be added using the utility functions in `src/utils/analytics.ts`)
+
+## Development
 
 Currently, two official plugins are available:
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
+import { Divider } from 'rsuite'
 
 const Navbar: React.FC = () => {
   const location = useLocation()
@@ -33,13 +34,13 @@ const Navbar: React.FC = () => {
           <button onClick={() => scrollToSection('home')} className="navbar-link">Home</button>
           <button onClick={() => scrollToSection('services')} className="navbar-link">Features</button>
           <Link to="/marketplace" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Marketplace</Link>
-          <Link to="/docs" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Docs</Link>
-          <button onClick={() => scrollToSection('roadmap')} className="navbar-link">Roadmap</button>
           <Link to="/pricing" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Pricing</Link>
           <Link to="/contact" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
         </div>
         
         <div className="navbar-actions">
+          <Link to="/docs" className="navbar-link" onClick={() => setIsMobileMenuOpen(false)}>Docs</Link>
+          <Divider vertical/>
           <a href="https://console.cloud.nexent.dev" target="_blank" rel="noopener noreferrer" className="navbar-link">Sign In</a>
           <a href="https://console.cloud.nexent.dev/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary navbar-btn">Get Started</a>
         </div>
