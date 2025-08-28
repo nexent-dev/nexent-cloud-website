@@ -9,7 +9,7 @@ export default class API {
     
     constructor() {
         this.isProduction = process.env.NODE_ENV === 'production';
-        this.host = this.isProduction ? 'backend.nexent.cloud' : '127.0.0.1:8000';
+        this.host = this.isProduction ? 'backend.cloud.nexent.dev' : '127.0.0.1:8000';
         this.baseURL = this.isProduction ? `https://${this.host}/v1` : `http://${this.host}/v1`;
         this.axiosInstance = axios.create({
             baseURL: this.baseURL,
