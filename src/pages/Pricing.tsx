@@ -1,19 +1,12 @@
 import React, { useState } from 'react'
 import './Pricing.css'
+import AppMarketplace from '../components/AppMarketplace'
 
 interface PricingConfig {
   vcpu: number
   ram: number
   storage: number
   bandwidth: number
-}
-
-interface AppPackage {
-  name: string
-  description: string
-  icon: string
-  specs: PricingConfig
-  monthlyPrice: number
 }
 
 const Pricing: React.FC = () => {
@@ -23,51 +16,6 @@ const Pricing: React.FC = () => {
     storage: 20,
     bandwidth: 1000
   })
-
-  const appPackages: AppPackage[] = [
-    {
-      name: 'WordPress',
-      description: 'Perfect for blogs and small websites',
-      icon: '📝',
-      specs: { vcpu: 1, ram: 2, storage: 20, bandwidth: 1000 },
-      monthlyPrice: 12
-    },
-    {
-      name: 'Odoo',
-      description: 'Complete business management suite',
-      icon: '💼',
-      specs: { vcpu: 2, ram: 4, storage: 50, bandwidth: 2000 },
-      monthlyPrice: 35
-    },
-    {
-      name: 'n8n',
-      description: 'Workflow automation platform',
-      icon: '🔄',
-      specs: { vcpu: 1, ram: 2, storage: 30, bandwidth: 1500 },
-      monthlyPrice: 18
-    },
-    {
-      name: 'Nextcloud',
-      description: 'Self-hosted cloud storage',
-      icon: '☁️',
-      specs: { vcpu: 2, ram: 3, storage: 100, bandwidth: 3000 },
-      monthlyPrice: 28
-    },
-    {
-      name: 'GitLab',
-      description: 'Complete DevOps platform',
-      icon: '🦊',
-      specs: { vcpu: 4, ram: 8, storage: 100, bandwidth: 5000 },
-      monthlyPrice: 75
-    },
-    {
-      name: 'Grafana',
-      description: 'Analytics and monitoring',
-      icon: '📊',
-      specs: { vcpu: 2, ram: 4, storage: 50, bandwidth: 2000 },
-      monthlyPrice: 32
-    }
-  ]
 
   const calculateCustomPrice = (config: PricingConfig): number => {
     const vcpuPrice = config.vcpu * 8
@@ -90,48 +38,7 @@ const Pricing: React.FC = () => {
         </div>
 
         {/* One-Click App Packages */}
-        <section className="app-packages">
-          <h2>One-Click App Packages</h2>
-          <p>Pre-configured applications with recommended specifications</p>
-          
-          <div className="packages-grid">
-            {appPackages.map((pkg, index) => (
-              <div key={index} className="package-card">
-                <div className="package-header">
-                  <div className="package-icon">{pkg.icon}</div>
-                  <h3>{pkg.name}</h3>
-                  <p>{pkg.description}</p>
-                </div>
-                
-                <div className="package-specs">
-                  <div className="spec-item">
-                    <span>vCPU:</span>
-                    <span>{pkg.specs.vcpu}</span>
-                  </div>
-                  <div className="spec-item">
-                    <span>RAM:</span>
-                    <span>{pkg.specs.ram} GB</span>
-                  </div>
-                  <div className="spec-item">
-                    <span>Storage:</span>
-                    <span>{pkg.specs.storage} GB</span>
-                  </div>
-                  <div className="spec-item">
-                    <span>Bandwidth:</span>
-                    <span>{pkg.specs.bandwidth} GB</span>
-                  </div>
-                </div>
-                
-                <div className="package-price">
-                  <span className="price">${pkg.monthlyPrice}</span>
-                  <span className="period">/month</span>
-                </div>
-                
-                <button className="btn btn-primary package-btn">Deploy Now</button>
-              </div>
-            ))}
-          </div>
-        </section>
+        <AppMarketplace />
 
         {/* Custom Calculator */}
         <section className="custom-calculator">

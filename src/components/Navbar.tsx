@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import './Navbar.css'
 import { Divider } from 'rsuite'
 
 const Navbar: React.FC = () => {
   const location = useLocation()
+  const navigate = useNavigate()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId?: string) => {
     if (location.pathname !== '/') {
-      window.location.href = `/#${sectionId}`
+      if (!sectionId) {
+        navigate('/')
+        return
+      }
+      navigate(`/#${sectionId}`)
       return
     }
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId!)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
