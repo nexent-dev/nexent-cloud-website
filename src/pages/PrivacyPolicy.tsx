@@ -109,7 +109,7 @@ const PrivacyPolicy: React.FC = () => {
             <p>
               If you have any questions about this Privacy Policy or our data practices, please contact us at:
             </p>
-            <div className="contact-info">
+            <div className="privacy-policy-contact-info">
               <p>Email: privacy@nexent.dev</p>
               <p>Address: Nexent Technologies, Inc.</p>
             </div>

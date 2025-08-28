@@ -127,7 +127,7 @@ const TermsOfUse: React.FC = () => {
             <p>
               For questions about these Terms of Use, please contact us at:
             </p>
-            <div className="contact-info">
+            <div className="terms-of-use-contact-info">
               <p>Email: legal@nexent.dev</p>
               <p>Address: Nexent Technologies, Inc.</p>
             </div>

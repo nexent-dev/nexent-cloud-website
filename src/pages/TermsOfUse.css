@@ -138,7 +138,7 @@
   color: #e0e0e0;
 }
 
-.contact-info {
+.terms-of-use-contact-info {
   background: rgba(0, 212, 255, 0.1);
   border: 1px solid rgba(0, 212, 255, 0.3);
   border-radius: 16px;
@@ -149,7 +149,7 @@
   overflow: hidden;
 }
 
-.contact-info::before {
+.terms-of-use-contact-info::before {
   content: '';
   position: absolute;
   top: 0;
@@ -159,7 +159,7 @@
   background: linear-gradient(90deg, #00d4ff, #8b5cf6);
 }
 
-.contact-info p {
+.terms-of-use-contact-info p {
   margin-bottom: 8px;
   font-weight: 500;
 }
